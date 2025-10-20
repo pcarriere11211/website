@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Started · FitLife</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span> FitLife</a>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="workout.html" >Workouts</a>
+      <a href="nutrition.html" >Nutrition</a>
+      <a href="get-started.html" aria-current="page" >Get Started</a>
+    </nav>
+  </div>
+</header>
+  <main class="container">
+    <section class="page-intro">
+      <h1>Get Your Personalized Plan</h1>
+      <p>Tell us about your fitness goals and preferences, and we'll create a customized workout and nutrition plan just for you. It's completely free!</p>
+    </section>
+
+    <section class="form-shell">
+      <form action="#" method="post">
+        <div class="form-grid two">
+          <div>
+            <label class="field-label" for="first">First Name *</label>
+            <input class="input" id="first" name="first" placeholder="Enter your first name" required>
+          </div>
+          <div>
+            <label class="field-label" for="last">Last Name *</label>
+            <input class="input" id="last" name="last" placeholder="Enter your last name" required>
+          </div>
+          <div>
+            <label class="field-label" for="email">Email Address *</label>
+            <input class="input" id="email" name="email" type="email" placeholder="Enter your email address" required>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div>
+          <span class="field-label">Current Fitness Level *</span>
+          <div class="check-grid">
+            <label class="checkbox"><input type="radio" name="level" value="beginner" required> Beginner - New to fitness or returning after a long break</label>
+            <label class="checkbox"><input type="radio" name="level" value="intermediate"> Intermediate - Regular exercise 2–3 times per week</label>
+            <label class="checkbox"><input type="radio" name="level" value="advanced"> Advanced - Consistent exercise 4+ times per week</label>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div>
+          <span class="field-label">Fitness Goals (Select all that apply) *</span>
+          <div class="check-grid">
+            <label class="checkbox"><input type="checkbox" name="goal" value="lose_weight"> Lose weight</label>
+            <label class="checkbox"><input type="checkbox" name="goal" value="build_muscle"> Build muscle</label>
+            <label class="checkbox"><input type="checkbox" name="goal" value="cardio_health"> Improve cardiovascular health</label>
+            <label class="checkbox"><input type="checkbox" name="goal" value="flexibility"> Increase flexibility</label>
+            <label class="checkbox"><input type="checkbox" name="goal" value="strength"> Build strength</label>
+            <label class="checkbox"><input type="checkbox" name="goal" value="overall"> Improve overall wellness</label>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div>
+          <span class="field-label">Preferred Workout Types (Select all that apply)</span>
+          <div class="check-grid">
+            <label class="checkbox"><input type="checkbox" name="type" value="strength"> Strength training</label>
+            <label class="checkbox"><input type="checkbox" name="type" value="cardio"> Cardio/HIIT</label>
+            <label class="checkbox"><input type="checkbox" name="type" value="yoga"> Yoga/Stretching</label>
+            <label class="checkbox"><input type="checkbox" name="type" value="bodyweight"> Bodyweight exercises</label>
+            <label class="checkbox"><input type="checkbox" name="type" value="running"> Running/Walking</label>
+            <label class="checkbox"><input type="checkbox" name="type" value="dance"> Dance fitness</label>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="form-grid">
+          <div>
+            <label class="field-label" for="availability">Weekly Availability</label>
+            <input class="input" id="availability" name="availability" placeholder="How many days per week can you exercise?">
+          </div>
+          <div>
+            <label class="field-label" for="health">Health Conditions or Limitations</label>
+            <textarea id="health" name="health" rows="3" placeholder="Please mention any injuries, health conditions, or physical limitations we should consider..." ></textarea>
+          </div>
+        </div>
+
+        <div style="margin-top:.5rem;">
+          <label class="checkbox"><input type="checkbox" name="newsletter"> Subscribe to weekly health tips newsletter</label><br>
+          <label class="checkbox"><input type="checkbox" name="detailed"> Request detailed personalized workout and nutrition plan</label>
+        </div>
+
+        <div style="margin-top:.9rem; text-align:center;">
+          <button class="button" type="submit" style="width:min(560px, 100%); background:#0b0c14; border-color:#0b0c14;">Submit My Request</button>
+          <div class="submit-note">* Required fields. We'll respond within 24 hours with your personalized plan.</div>
+        </div>
+      </form>
+    </section>
+
+    <section class="info-panels">
+      <article class="card info">
+        <h3>What You'll Receive</h3>
+        <ul>
+          <li>Custom workout plan based on your goals</li>
+          <li>Nutrition recommendations and meal ideas</li>
+          <li>Exercise modifications for your fitness level</li>
+          <li>Progress tracking guidelines</li>
+        </ul>
+      </article>
+      <article class="card info">
+        <h3>Our Promise</h3>
+        <ul>
+          <li>100% free – no hidden costs</li>
+          <li>Personalized to your specific needs</li>
+          <li>Created by certified fitness professionals</li>
+          <li>Your information is kept private and secure</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">© 2025 FitLife · Built from your provided components/styles</div>
+  </footer>
+</body>
+</html>
