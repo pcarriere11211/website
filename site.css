@@ -371,3 +371,100 @@ legend, .field-label { font-weight: 700; margin-bottom: .35rem; display: block; 
 .page-intro { text-align: center; margin: 1rem 0 1.2rem; }
 .page-intro h1 { font-size: clamp(1.8rem, 4.2vw, 2.6rem); margin: 0 0 .35rem; }
 .page-intro p { margin: 0 auto; color: var(--muted-foreground); max-width: 70ch; }
+
+
+/* ===== MOBILE FIX ===== */
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+
+  /* Container */
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /* NAV STACK */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav nav a {
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  /* HERO */
+  .hero h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero p {
+    text-align: center;
+  }
+
+  .hero .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero .button {
+    width: 100%;
+  }
+
+  /* GRIDS → SINGLE COLUMN */
+  .grid,
+  .cards,
+  .offer-grid,
+  .recipe-grid,
+  .form-grid,
+  .form-grid.two,
+  .check-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* CARDS */
+  .card,
+  .offer-card {
+    padding: 1rem;
+  }
+
+  /* STATS */
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  /* SECTION HEAD */
+  .section-head {
+    grid-template-columns: 1fr;
+  }
+
+  /* BUTTONS TOUCH FRIENDLY */
+  .button {
+    min-height: 44px;
+    width: 100%;
+    justify-content: center;
+  }
+}
