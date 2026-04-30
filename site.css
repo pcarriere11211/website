@@ -258,7 +258,8 @@ label { font-weight: 600; }
   background: oklch(0.16 0 0);
   color: #fff;
   border-radius: 18px;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  max-width: 980px;
   padding: clamp(1.2rem, 3vw, 2rem);
 }
 .stats {
@@ -313,6 +314,10 @@ label { font-weight: 600; }
   border-radius: 16px;
   padding: 1.25rem;
   margin: 2rem 0;
+  text-align: center;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .tips h3 { text-align:center; margin:0 0 1rem; }
 .tips-grid { display:grid; grid-template-columns:1fr; gap:1rem; text-align:center; }
